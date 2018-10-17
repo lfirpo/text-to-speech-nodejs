@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Header, Jumbotron } from 'watson-react-components';
 
 // eslint-disable-next-line
-const DESCRIPTION = 'The Text to Speech service understands text and natural language to generate synthesized audio output complete with appropriate cadence and intonation. It is available in 13 voices across 7 languages. Select voices now offer Expressive Synthesis and Voice Transformation features.';
-const GDPR_INFO = 'This system is for demonstration purposes only and is not intended to process Personal Data. No Personal Data is to be entered into this system as it may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679';
+const DESCRIPTION = 'O serviço Text to Speech entende texto e linguagem natural para gerar saída de áudio sintetizada completa com cadência e entonação apropriadas. Está disponível em 13 vozes em 7 idiomas. As vozes selecionadas agora oferecem os recursos Expressive Synthesis e Voice Transformation.';
+const GDPR_INFO = 'Este sistema é apenas para fins de demonstração e não se destina a processar dados pessoais. Nenhum dado pessoal deve ser inserido neste sistema, pois pode não ter os controles necessários para atender aos requisitos do Regulamento Geral de Proteção de Dados (UE) 2016/679.';
 
 function Layout(props) {
   const { children } = props;
@@ -12,12 +12,12 @@ function Layout(props) {
     <html lang="en">
       <head>
         <title>
-          Text to Speech Demo
+          Demonstração de Texto para Fala
         </title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="og:title" content="Text to Speech Demo" />
+        <meta name="og:title" content="Demonstração de Texto para Fala" />
         <meta name="og:description" content={DESCRIPTION} />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png" />
@@ -29,13 +29,13 @@ function Layout(props) {
       </head>
       <body>
         <Header
-          mainBreadcrumbs="Text to Speech"
+          mainBreadcrumbs="Texto para Fala"
           mainBreadcrumbsUrl="https://www.ibm.com/watson/services/text-to-speech/"
-          subBreadcrumbs="Text to Speech Demo"
+          subBreadcrumbs="Demonstração de Texto para Fala"
           subBreadcrumbsUrl="https://text-to-speech-demo.mybluemix.net"
         />
         <Jumbotron
-          serviceName="Text to Speech"
+          serviceName="Texto para Fala"
           repository="https://github.com/watson-developer-cloud/text-to-speech-nodejs"
           documentation="https://console.bluemix.net/docs/services/text-to-speech/getting-started.html"
           apiReference="http://www.ibm.com/watson/developercloud/text-to-speech/api/v1/"
