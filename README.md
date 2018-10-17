@@ -97,6 +97,21 @@ Você pode ver um [demo][demo_url] deste aplicativo.
    - **memory** para `256M` se estiver utilizando a versão gratuita 
    - **my-stt-service** para o nome do serviço `Text to Speech` que foi criado no Bluemix
    
+   **Exemplo:** 
+   
+   ```
+   ---
+   applications:
+   - services:
+     - Text to Speech-qx
+     name: speech-gob
+     command: npm start
+     path: .
+     memory: 256M
+   ```
+   
+    **Nota:** se ocorrer erro de falta de memória, pare algum Aplicativo Cloud Foundry ou redimensione a atualização de memória no Painel do IBM Cloud.
+  
 1. Faça o deploy da aplicação
 
     ```
