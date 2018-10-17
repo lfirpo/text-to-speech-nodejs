@@ -225,13 +225,13 @@ export default class Demo extends Component {
           </div>
 
           <Tabs selected={0} onChange={this.onTabChange}>
-            <Pane label="Text">
+            <Pane label="Texto">
               <textarea onChange={this.onTextChange} className="base--textarea textarea" spellCheck="false" value={text || ''} />
             </Pane>
             <Pane label={ssmlLabel}>
               <textarea onChange={this.onSsmlChange} className="base--textarea textarea" spellCheck="false" value={ssml || ''} />
             </Pane>
-            <Pane label="Voice Transformation SSML">
+            <Pane label="SSML de Transformação de Voz">
               <textarea readOnly={!ssml_voice} onChange={this.onVoiceSsmlChange} className="base--textarea textarea" spellCheck="false" value={ssml_voice || 'Voice Transformation not currently supported for this language.'} />
             </Pane>
           </Tabs>
