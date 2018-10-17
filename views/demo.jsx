@@ -6,7 +6,7 @@ import 'whatwg-fetch';
 import voices from '../voices';
 
 // eslint-disable-next-line
-const TEXT_DESCRIPTION = 'The text language must match the selected voice language: Mixing language (English text with a Spanish male voice) does not produce valid results. The synthesized audio is streamed to the client as it is being produced, using the HTTP chunked encoding. The audio is returned in mp3 format which can be played using VLC and Audacity players.';
+const TEXT_DESCRIPTION = 'O idioma do texto deve corresponder ao idioma de voz selecionado: O idioma de mixado (texto em inglês com uma voz feminina em português ) não produz resultados válidos. O áudio sintetizado é transmitido para o cliente conforme está sendo produzido, usando a codificação HTTP fragmentada por WebSockects. O áudio é retornado em formato mp3, que pode ser reproduzido usando players VLC e Audacity.';
 
 /**
  * @return {Function} A polyfill for URLSearchParams
@@ -204,7 +204,7 @@ export default class Demo extends Component {
       <section className="_container _container_large">
         <div className="row">
           <h2 className="base--h2 title">
-            Input Text
+            Entrada de texto
           </h2>
           <p className="base--p normalfont">
             {TEXT_DESCRIPTION}
@@ -259,7 +259,7 @@ export default class Demo extends Component {
                   className="base--a reset-button"
                   onClick={this.onResetClick}
                 >
-                  Reset
+                  Resetar
                 </a>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default class Demo extends Component {
               <Icon type="loader" />
             </div>
             <audio autoPlay id="audio" className={`audio ${hasAudio ? '' : 'hidden'}`} controls="controls">
-              Your browser does not support the audio element.
+              Seu navegador não suporta o elemento de áudio.
             </audio>
           </div>
         </div>
@@ -306,17 +306,17 @@ class ConditionalSpeakButton extends Component {
         onClick={onClick}
         className={loading ? 'base--button speak-button loading' : 'base--button speak-button'}
       >
-        Speak
+        Falar
       </button>
     ) : (
       <button
         type="button"
         onClick={onClick}
         className="base--button speak-button speak-disabled"
-        title="Only available on Chrome and Firefox"
+        title="Disponível apenas no Chrome e no Firefox"
         disabled
       >
-        Speak
+        Falar
       </button>
     );
   }
