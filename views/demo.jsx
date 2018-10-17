@@ -136,7 +136,7 @@ export default class Demo extends Component {
 
   onVoiceChange(event) {
     const voice = voices[voices.map(v => v.name).indexOf(event.target.value)];
-    const label = (voice.name === 'pt-BR_IsabelaVoice') ? 'Expressividade SSML' : 'SSML';
+    const label = (voice.name === 'en-US_LisaVoice') ? 'Expressividade SSML' : 'SSML';
     this.setState({
       voice,
       error: null,
